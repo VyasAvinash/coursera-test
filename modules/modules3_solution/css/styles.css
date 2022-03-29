@@ -34,7 +34,6 @@ body {
 }
 #nav-list a {
   color: black;
-  text-align: center;
   padding-top: 5px;
 }
 #nav-list a:hover {
