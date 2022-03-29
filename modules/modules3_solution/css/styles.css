@@ -54,7 +54,6 @@ body {
 }
 /* END HEADER */
 
-
  .container h2 {
       text-align: center;
       color: black;
@@ -85,31 +84,30 @@ body {
 /********** Desktop only **********/
 @media (min-width: 992px) {
   /* Header */
-
-#header-nav {
+  #header-nav {
   padding: 5vw;
-}
-
-.navbar-brand h1 {
-  font-size : 2em;
-}
-
+  }
 
   /* End Header */
-
+  .navbar-brand h1 {
+    font-size : 2em;
+  }
 
 }
 
 /********** Tablet only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
+  /* Header */
   #header-nav {
   padding: 5vw;
   }
 
+  /* End Header */
   .navbar-brand h1 {
-  font-size : 2em;
+    font-size : 2em;
   }
+
 }
 
 /********** Mobile only **********/
