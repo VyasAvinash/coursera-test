@@ -107,10 +107,11 @@ $ajaxUtils.sendGetRequest(
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-      console.log(JSON.stringify(chosenCategoryShortName).replaceAll('"',"'"));
-
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlUrl, "randomCategoryShortName", JSON.stringify(chosenCategoryShortName).replaceAll('"',"'"));
-      // var homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlUrl, "randomCategoryShortName", "'V'");
+      
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlUrl, "randomCategoryShortName", "'"+ chosenCategoryShortName + "'");
+      // OR USE
+      //console.log(JSON.stringify(chosenCategoryShortName).replaceAll('"',"'"));
+      // var homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlUrl, "randomCategoryShortName", JSON.stringify(chosenCategoryShortName).replaceAll('"',"'"));
      
       // TODO: STEP 4: Insert the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
